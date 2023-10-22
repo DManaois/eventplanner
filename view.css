@@ -1,0 +1,170 @@
+.searchbar {
+    margin-top: 100px;
+    margin-left: 1500px;
+}
+
+
+h2{
+margin-left: 70px;
+font-size: 50px;
+color:#a60cac;
+}
+body {
+    background-image: url('adubg.png');
+    background-size: cover    ;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;  
+}
+
+
+
+
+.menu ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 200px;
+    margin-top: 0   px;
+    font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: large;
+}
+
+.menu a:hover{
+    color: #a60cac;
+}
+
+.logo {
+ margin-top: 10px;
+}
+
+
+.sidebar {
+    margin-top: 50px;
+    width: 230px;
+    height: 800px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.sidebar h3{
+    margin-top: -10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(38, 221, 253);
+    display: inline-block;
+}   
+  .sidebar h1{
+    margin-left: 29px;
+    font-size: 24px;
+}
+.sidebar img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+
+}
+
+.sidebar li {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+.sidebar li i {
+ margin-right: 20px;
+}
+
+.sidebar li:hover {
+    background-color: #ddd;
+}
+
+.sidebar li a {
+ text-decoration: none;
+}
+
+#sign-out-link{
+  margin-left: 50px;
+  font-size: 20px;
+  border-top: 2px solid rgb(38, 221, 253);
+  display: inline-block;
+  text-decoration: none;  
+}
+  .sidebar a:hover{
+        background-color: #ddd;
+  }
+
+
+
+
+.content {
+    flex-grow: 1;
+}
+
+
+.contentcontainer {
+margin-left: 500px;
+margin-top: -800px;
+
+width: 800px;
+height: 500px;
+}
+
+
+.contentcontainer h2{
+    font-size: 70px;
+    margin-left: auto;
+    color: #a60cac;
+
+}
+.contentcontainer h1{
+    font-size: 30px;
+    color:#a60cac;
+}
+
+.contentcontainer  li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .contentcontainer img {
+    width: 100px;
+    height: 100px;
+    margin-left: 600px;
+    margin-top: -700px ;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .contentcontainer span {
+    font-size: 16px bold;
+    color: #a60cac;
+
+  }
+
+
+

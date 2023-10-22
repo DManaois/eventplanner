@@ -1,0 +1,52 @@
+<div class="carousel">
+  <img src="m1.jpeg" alt="Image 1">
+  <img src="m2.jpeg" alt="Image 2">
+  <img src="m3.png" alt="Image 3">
+  <img src="4.png" alt="Image 3">
+  <!-- Add more images if needed -->
+</div>
+
+<style>
+  .carousel {
+  width: 600px; /* Adjust width as needed */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel img {
+  width: 200px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+</style>
+<script>
+  // Get the carousel container and individual images
+const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+
+// Set initial position and number of images to show
+let position = 0;
+const numVisibleImages = 3;
+
+// Function to update carousel position
+const updatePosition = () => {
+  carousel.style.transform = `translateX(-${position * 100}%)`;
+};
+
+// Event listener for next button
+nextButton.addEventListener('click', () => {
+  if (position < images.length - numVisibleImages) {
+    position++;
+    updatePosition();
+  }
+});
+
+// Event listener for previous button
+prevButton.addEventListener('click', () => {
+  if (position > 0) {
+    position--;
+    updatePosition();
+  }
+});
+
+</script>
