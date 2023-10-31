@@ -5,9 +5,9 @@
   </title>
   <link rel="stylesheet" href="profile.css">
 </head>
+  
 
-<div id="bg"></div>
-<body>
+  <!---navigation-->
   <div class="navbar">
     <div class="icon">
       <h2 class="logo">Org-anizer</h2>
@@ -15,83 +15,106 @@
 
 
 
-  <div class="menu">
+ 
+</div>
+
+<!---searchbar-->
+<div class="searchbar">
+  <form action="/search" method="GET">
+      <input type="text" name="q" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+</div>
+
+<!---sidebar-->
+<div class="container">
+  <div class="column-25">
+    <div class="sidebar">
+      <img src="profile.png" alt="" id="dash">
+      <h1>PROFILE</h1>
+      <h3>adugame@adamson.edu.ph</h3>
       <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">DESIGN</a></li>
-          <li><a href="#">CONTACT</a></li>
-      </ul>
+          <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="create.html"><i class="fas fa-calendar-plus"></i> Create Events</a></li>
+          <li><a href="view.html"><i class="fas fa-calendar"></i> View Events</a></li>
+          <li><a href="inventory.html"><i class="fas fa-box-open"></i> Inventory</a></li>
+          <li><a href="index.html"><i class="fas fa-box-open"></i> Sign-Out</a></li>
+      </ul>       
+    </div>  
   </div>
 
-  <div class="searchbar">
-    <form action="/search" method="GET">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">SEARCH</button>
-      </form>
-  </div>
-
-  <div class="sidebar">
-    <img src="profile.png" alt="" id="dash">
-    <h1>PROFILE</h1>
-    <h3>adugame@adamson.edu.ph</h3>
-    <ul>
-        <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="create.html"><i class="fas fa-calendar-plus"></i> Create Events</a></li>
-        <li><a href="view.html"><i class="fas fa-calendar"></i> View Events</a></li>
-        <li><a href="inventory.html"><i class="fas fa-box-open"></i> Inventory</a></li>
-        <a href="index.html" id="sign-out-link">Sign Out</a>
-    </ul> 
-    
-  </div>
-
-
-
-  <div class="contentcontainer">
-    <h1>BASIC INFORMATION</h1>
-    <table class="t1">
-        <tr>
-          <td>ORG NAME</td>
-          <td>ADU GAME</td>
-        </tr>
-
-        <tr>
-          <td>EMAIL ADDRESS</td>
-          <td>adugame@adamson.edu.ph</td>
-        </tr>
-
-        <tr>
-            <td>Password</td>
-            <td>Change Password</td>
+  <!---content-->
+  <div class="column-50">
+    <div class="contentcontainer">
+      <h1>BASIC INFORMATION</h1>
+      <table class="t1">
+          <tr>
+            <td>ORG NAME</td>
+            <td>ADU GAME</td>
           </tr>
-      </table>  
+  
+          <tr>
+            <td>EMAIL ADDRESS</td>
+            <td>adugame@adamson.edu.ph</td>
+          </tr>
+  
+          <tr>
+              <td>Password</td>
+              <td>Change Password</td>
+            </tr>
+        </table>  
+  
+      <h1><br><br>CONTACT INFORMATION</h1>
+      <table class="t2">
+          <tr>
+            <td>CONTACT NO.   </td>
+            <td>0908-69-69-911</td>
+          </tr>
+  
+          <tr>
+            <td>FACEBOOK</td>
+            <td>AduG</td>
+          </tr>
+  
+          <tr>
+              <td>TWITTER</td>
+              <td>AduGame</td>
+          </tr>
+  
+          <tr>
+              <td>INSTAGRAM</td>
+              <td>ADUggZ</td>
+          </tr>
+        </table> 
+    </div>
 
-    <h1><br><br>CONTACT INFORMATION</h1>
-    <table class="t2">
-        <tr>
-          <td>CONTACT NO.   </td>
-          <td>0908-69-69-911</td>
-        </tr>
-
-        <tr>
-          <td>FACEBOOK</td>
-          <td>AduG</td>
-        </tr>
-
-        <tr>
-            <td>TWITTER</td>
-            <td>AduGame</td>
-        </tr>
-
-        <tr>
-            <td>INSTAGRAM</td>
-            <td>ADUggZ</td>
-        </tr>
-      </table>  
   </div>
+
+  <div class="column-10">25</div>
+
+
+  
+
+
+
+
   </div>
-  <script src=".js"></script>
+
+  <footer>
+    <div class="footer">
+      <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+      <p>&copy; 2023 Org-anizer. All rights reserved.</p>
+    </div> 
+    </div>
+  </footer>
+  <script src="dashboard.js"></script>
 </body>
 </html>

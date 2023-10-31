@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CREATE EVENTS
+  <title>CREATE
   </title>
   <link rel="stylesheet" href="create.css">
 </head>
+  
 
-<div id="bg"></div>
-<body>
+  <!---navigation-->
   <div class="navbar">
     <div class="icon">
       <h2 class="logo">Org-anizer</h2>
@@ -15,55 +15,79 @@
 
 
 
-  <div class="menu">
-      <ul>
-          <li><a href="dashboard.html">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">DESIGN</a></li>
-          <li><a href="#">CONTACT</a></li>
-      </ul>
-  </div>
-
-  <div class="searchbar">
-    <form action="/search" method="GET">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">Search</button>
-      </form>
-  </div>
-
-  <div class="sidebar">
-    <img src="create.png" alt="" id="dash">
-    <h1>CREATE EVENT</h1>
-    <ul>
-        <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
-        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
-        <li><a href="create.html"><i class="fas fa-calendar-plus"></i> Create Events</a></li>
-        <li><a href="view.html"><i class="fas fa-calendar"></i> View Events</a></li>
-        <li><a href="inventory.html"><i class="fas fa-box-open"></i> Inventory</a></li>
-        <a href="index.html" id="sign-out-link">Sign Out</a>
-    </ul> 
-    
-  </div>
-
-
-
-  <div class="contentcontainer">
-    <h1>Plot an Event for your Organization!</h1>
-    <label for="input1">Name of the Organization: </label>
-    <input type="text" id="input1" name="input1" class="input-box" value="Some Text" onclick="clearText('input1')"><br>
-    <label for="input2">Activity Title: </label>
-    <input type="text" id="input2" name="input2" class="input-box" value="Some Text" onclick="clearText('input2')"><br>
-    <label for="input3">Event Planned Date: </label>
-    <input type="text" id="input3" name="input3" class="input-box" value="Some Text" onclick="clearText('input3')"><br>
-    <label for="input4">Event Venue: </label>
-    <input type="text" id="input4" name="input4" class="input-box" value="Some Text" onclick="clearText('input4')"><br>
-    <label for="input5">Description of the Activity: </label>
-    <input type="text" id="input5" name="input5" class="input-box" value="Some Text" onclick="clearText('input5')"><br>
  
+</div>
+
+<!---searchbar-->
+<div class="searchbar">
+  <form action="/search" method="GET">
+      <input type="text" name="q" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+</div>
+
+<!---sidebar-->
+<div class="container">
+  <div class="column-25">
+    <div class="sidebar">
+      <img src="create.png" alt="" id="dash">
+      <h1>CREATE EVENT</h1>
+      <ul>
+          <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="create.html"><i class="fas fa-calendar-plus"></i> Create Events</a></li>
+          <li><a href="view.html"><i class="fas fa-calendar"></i> View Events</a></li>
+          <li><a href="inventory.html"><i class="fas fa-box-open"></i> Inventory</a></li>
+          <li><a href="index.html"><i class="fas fa-box-open"></i> Sign-Out</a></li>
+      </ul>       
+    </div>  
+  </div>
+
+  <!---content-->
+  <div class="column-50">
+    <h1>Plot an Event for your Organization!</h1>
+    <div class="contentcontainer">
+     
+      
+      <label for="input1">Name of the Organization: </label>
+      <input type="text" id="input1" name="input1" class="input-box" value="Some Text" onclick="clearText('input1')"><br>
+      <label for="input2">Activity Title: </label>
+      <input type="text" id="input2" name="input2" class="input-box" value="Some Text" onclick="clearText('input2')"><br>
+      <label for="input3">Event Planned Date: </label>
+      <input type="text" id="input3" name="input3" class="input-box" value="Some Text" onclick="clearText('input3')"><br>
+      <label for="input4">Event Venue: </label>
+      <input type="text" id="input4" name="input4" class="input-box" value="Some Text" onclick="clearText('input4')"><br>
+      <label for="input5">Description of the Activity: </label>
+      <input type="text" id="input5" name="input5" class="input-box" value="Some Text" onclick="clearText('input5')"><br>
    
+    </div>
+
   </div>
+
+  <div class="column-10">25</div>
+
+
+  
+
+
+
+
   </div>
+
+  <footer>
+    <div class="footer">
+      <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+      <p>&copy; 2023 Org-anizer. All rights reserved.</p>
+    </div> 
+    </div>
+  </footer>
   <script src="create.js"></script>
 </body>
 </html>

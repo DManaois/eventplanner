@@ -2,26 +2,47 @@
 <html>
 <head>
     <style>
-        .button-container {
-            display: flex;
+        body{
+            position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
         }
-        
-        .button {
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+        .col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.bg-warning {
+  background-color: #ffc107!important;
+}
+
+.bg-success {
+  background-color: #28a745!important;
+}
+.menu{
+  border-bottom: 50px solid  #009ef8 ;
+  background-color: #009ef8;
+  height: 50px;
+
+}
     </style>
 </head>
 <body>
-    <div class="button-container">
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
-        <button class="button">Button 3</button>
-    </div>
-</body>
+  
+    <div class="container-fluid">
+      <h2>Three Unequal Columns</h2>
+      <p>To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:</p>
+      <div class="row">
+        <div class="col-3 bg-success">.col-3</div>
+        <div class="col-6 bg-warning">.col-6</div>
+        <div class="col-3 bg-success">.col-3</div>
+      </div></body>
 </html>
