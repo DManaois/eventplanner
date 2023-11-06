@@ -1,144 +1,168 @@
-
-.menu {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-}
-
-a:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-p {
-  margin: 0;
-  margin-top: 20px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.footer {
-  background-color: #f4f4f4;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  
-} 
-
-h2{
-  
-  font-size: 50px;
-  color: rgb(13, 184, 236);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-}
-.orglogo img{
-width: 100px;
-height: 100px;
-}
-
 body {
-    background-color: #1f2833;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-  }
+      font-family: Arial, sans-serif;
+      background-image: url("adubu.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      
+    }
 
-  .container {
-    height: 500px;
-    width: 400px;
-    margin: 150px auto;
-    margin-right: 200px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.8;
-    text-align: center;
-    border-radius: 10px;
-  }
+    .navbar {
+      background-color: #f3f3f3;
+      height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
 
-  
-  .logo {
-    margin-top: 10px;
-  }
+    .logo1 {
+      font-size: 30px;
+      color: rgb(13, 184, 236);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  .logo img {
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;  
-  }
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-  .form-group {
-    margin-top: 20px;
-  }
+    .menu li {
+      display: inline;
+      margin-right: 20px;
+    }
 
-  .form-group input[type="text"],
-  .form-group input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
 
-  .form-group input[type="submit"] {
-    width: 87%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    .menu a:hover {
+      background-color: #333;
+      color: #fff;
+    }
 
-  .form-group input[type="submit"]:hover {
-    background-color: #45a049;
-  }
+    .container {
+      width: 400px;
+      margin: 150px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      border-radius: 10px;
+    }
 
-  .button button{
-    width: auto;
-    padding: 10px 20px;
-    margin:  10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;   
-    border-radius: 5px;
-    cursor: pointer;
+    .orglogo img {
+      width: 100px;
+      height: 100px;
+    }
 
-  }
-  
-  .button :hover{
-    display: flex-start;
-    background-color: #45a050;
-  }
+    h2 {
+      font-size: 30px;
+      color: rgb(13, 184, 236);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  body, ul {
-    margin: 0;
-    padding: 0;
-}
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
 
+    .form-group input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
 
+    .button button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
+    .button button:hover {
+      background-color: #45a049;
+    }
 
+    .button-link {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; /* Remove the default underline for links */
+    }
+    
+    .button-link:hover {
+      background-color: #45a049;
+    }
+    
+    .button-link:visited {
+      color: white;
+    }
+    
+
+    .logo2 {
+      margin-top: 10px;
+    }
+
+    .logo2 img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    p {
+	  text-align: center;
+      margin: 0;
+      margin-top: 15px;
+	  margin-bottom: 15px;
+    }
+
+    .wrapper {
+      flex: 1;
+    }

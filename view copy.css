@@ -50,32 +50,13 @@ p {
 
 
 .searchbar {
-    margin-left: auto;
+    margin-left: 1500px;
     color: #1F2833;
-	padding: 10px;
   }
-  
- .searchbar input {
-      padding: 10px;
-	  font-size: 16px;
-    }
-	
-.searchbar button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-	
-.searchbar button:hover {
-      background-color: #fff;
-      color: #333;
-    }
   
 h2{
   margin-left: 70px;
-  font-size: 24px;
+  font-size: 50px;
   color: rgb(13, 184, 236);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -89,34 +70,36 @@ body {
     padding: 0; 
   }
   
+
+
+
   .sidebar {
     margin-top: 50px;
-    width: 250px;
-    height: 860px;
+    width: 230px;
+    height: 850px;
     background-color: white;
     border-radius: 10px;
     margin-left: 10px;
-	padding: 20px;
-	float: left;
+    
 }
 
 .sidebar h3{
     margin-top: -10px;
     margin-left: 20px;
     font-size: 15px;
-    border-bottom: 2px solid #1F2833;
+    border-bottom: 2px solid rgb(38, 221, 253);
     display: inline-block;
 }   
   .sidebar h1{
     margin-left: 20px;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma;
     color: #1F2833;
 }
 .sidebar img{
     height: 100px;
     width: 100px;
-    margin-left: 65px;
+    margin-left: 60px;
     padding-top: 50px;
 }
 
@@ -132,7 +115,7 @@ body {
     align-items: center;
     padding: 30px;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma;
 
 }
 
@@ -190,85 +173,29 @@ body {
     margin-top: 0%;
   }
 
-  .contentcontainer h2{
-    font-size: 70px;
-    margin-left: auto;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-
+  .contentcontainer  li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+  } 
   .contentcontainer h1{
     font-size: 30px;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .contentcontainer p{
-    font: 30px sans-serif;
-    color: rgb(13, 184, 236);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  .contentcontainer img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
   }
+  
 
 
-#carousel-container {
-    position: relative;
-    width: 900px;
-    height: 500px;
-    overflow: hidden;
-  } 
-  
-  #carousel {
-    list-style-type: none;
-    padding: 0;
-    margin-top: -100px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  
-  #carousel li {
-    flex: 0 0 33.33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #carousel img {
-    max-width: 100% ;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  #prev-button,
-  #next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  #prev-button {
-    left: 10px;
-  }
-  
-  #next-button {
-    right: 10px;
-  }
-  
-  
-  #custom-table {
-    border-collapse: collapse;
-    margin-top: -50px;
-  }
-
-
-
-  #custom-table th,
-  #custom-table td {
-    border: none;
-    padding: 8px;
-  }
-  
   footer {
     background-color: #f4f4f4;
     padding: 20px 0;
@@ -283,17 +210,4 @@ body {
   p {
     margin: 0;
   }
-  
-  .navbar {
-      background-color: #f4f4f4;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-	
-	.logo {
-      font-size: 24px;
-    }
   
